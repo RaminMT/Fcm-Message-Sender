@@ -1,0 +1,29 @@
+﻿{
+  "FcmKey": null,
+  "Message": {
+    "To": null,
+    "RegistrationIds": [],
+    "Condition": null,
+    "CollapseKey": null,
+    "Priority": 0,
+    "ContentAvailable": null,
+    "TimeToLive": null,
+    "RestrictedPackageName": null,
+    "DryRun": null,
+    "Data": {},
+    "Notification": {
+      "Title": null,
+      "Body": null,
+      "Icon": null,
+      "ClickAction": null,
+      "Sound": null,
+      "Badge": null,
+      "Color": null,
+      "Tag": null,
+      "BodyLocalizationKey": null,
+      "BodyLocalizationArguments": [],
+      "TitleLocalizationKey": null,
+      "TitleLocalizationArguments": []
+    }
+  }
+}
