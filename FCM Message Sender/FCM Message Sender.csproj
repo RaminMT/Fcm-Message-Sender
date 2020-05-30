@@ -4,11 +4,17 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <RootNamespace>FCM_Message_Sender</RootNamespace>
-        <LangVersion>8</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="FCM.Net.Core" Version="1.0.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="*.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
@@ -19,7 +25,8 @@
       <Content Include="..\README.md">
         <Link>README.md</Link>
       </Content>
-      <Content Include="runtimeconfig.json">
+      <None Remove="appData.json" />
+      <Content Include="appData.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
