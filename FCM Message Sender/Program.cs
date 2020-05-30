@@ -9,7 +9,7 @@ namespace FCM_Message_Sender
     {
         static void Main(string[] args)
         {
-            var jsonString = File.ReadAllText("AppData.json");
+            var jsonString = File.ReadAllText("appdata.json");
             var model = JsonSerializer.Deserialize<FcmModel>(jsonString);
             
             using var sender = new Sender(model.FcmKey);
